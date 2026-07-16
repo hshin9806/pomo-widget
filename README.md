@@ -14,9 +14,15 @@ Requires macOS 13 or later.
 
 ## Install
 
-Download `POMO.zip` from the [latest release](../../releases/latest), unzip it, and drag POMO into Applications.
+Download `POMO.dmg` from the [latest release](../../releases/latest), open it, and drag POMO into Applications. (A `POMO.zip` is also attached if you'd rather skip the disk image.)
 
-This build isn't notarized (that requires a paid Apple Developer account), so macOS will refuse to open it with a "damaged" or "unidentified developer" warning on first launch. To open it anyway: right-click POMO in Applications → **Open** → **Open** again in the dialog. You only need to do this once.
+This build isn't notarized (that requires a paid Apple Developer account), so macOS will refuse to open it with a "damaged" or "unidentified developer" warning on first launch, and — depending on your macOS version — right-click → Open may not offer a way past it. The reliable fix: open Terminal and run
+
+```bash
+xattr -cr /Applications/POMO.app
+```
+
+then open POMO normally. You only need to do this once.
 
 ## Build from source
 
@@ -62,6 +68,12 @@ Bump `CFBundleShortVersionString` and `CFBundleVersion` in `Info.plist` first, a
 
 위젯을 클릭하면 뜨는 패널에서 원하는 시간을 바로 입력하거나 25 / 45 / 50 프리셋을 누르면 됩니다. 휴식이 필요 없으면 스위치를 꺼서 집중만 이어서 돌릴 수도 있어요. 세션이 끝나면 알림과 소리로 알려주고, 로그인 시 자동 실행은 톱니바퀴 메뉴에 있습니다. 시스템 언어에 따라 한국어와 영어로 표시됩니다.
 
-macOS 13 이상이 필요합니다. [최신 릴리스](../../releases/latest)에서 `POMO.zip`을 받아 압축을 풀고 응용 프로그램 폴더에 넣으면 됩니다.
+macOS 13 이상이 필요합니다. [최신 릴리스](../../releases/latest)에서 `POMO.dmg`를 받아 열고, POMO를 응용 프로그램 폴더로 드래그하면 됩니다. (압축이 편하시면 `POMO.zip`도 같이 올라가 있어요.)
 
-공증(notarization)을 받지 않은 빌드라 (유료 Apple Developer 계정이 필요해요), 처음 실행할 때 macOS가 "손상되었다" 또는 "확인되지 않은 개발자" 경고를 띄웁니다. 그래도 열려면: 응용 프로그램 폴더에서 POMO를 우클릭 → **열기** → 다이얼로그에서 다시 **열기**. 한 번만 하면 됩니다.
+공증(notarization)을 받지 않은 빌드라 (유료 Apple Developer 계정이 필요해요), 처음 실행할 때 macOS가 "손상되었다" 또는 "확인되지 않은 개발자" 경고를 띄웁니다. macOS 버전에 따라 우클릭 → 열기로는 안 풀릴 수 있어요. 가장 확실한 방법은 터미널을 열고 아래 명령어를 실행하는 것입니다:
+
+```bash
+xattr -cr /Applications/POMO.app
+```
+
+그다음 POMO를 평소처럼 열면 됩니다. 한 번만 하면 됩니다.
