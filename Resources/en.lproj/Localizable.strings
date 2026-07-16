@@ -1,0 +1,15 @@
+"panel.minutes" = "min";
+"panel.break" = "Break";
+"panel.start" = "Start";
+"panel.pause" = "Pause";
+"panel.reset" = "Reset";
+
+"gear.label" = "Settings";
+"gear.launchAtLogin" = "Launch at login";
+"gear.quit" = "Quit POMO";
+
+"notification.focusDone.title" = "Focus session done!";
+"notification.focusDone.body" = "Take a %d-minute break.";
+"notification.focusDone.bodyNoBreak" = "Straight into the next focus session.";
+"notification.restDone.title" = "Break over!";
+"notification.restDone.body" = "Time to focus for %d minutes.";

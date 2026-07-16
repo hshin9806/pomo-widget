@@ -1,0 +1,15 @@
+"panel.minutes" = "분";
+"panel.break" = "휴식";
+"panel.start" = "시작";
+"panel.pause" = "일시정지";
+"panel.reset" = "리셋";
+
+"gear.label" = "설정";
+"gear.launchAtLogin" = "로그인 시 자동 실행";
+"gear.quit" = "POMO 종료";
+
+"notification.focusDone.title" = "집중 시간 끝!";
+"notification.focusDone.body" = "%d분 쉬어요.";
+"notification.focusDone.bodyNoBreak" = "쉬지 않고 바로 다음 집중으로 갑니다.";
+"notification.restDone.title" = "휴식 끝!";
+"notification.restDone.body" = "%d분 집중할 차례예요.";
