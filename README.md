@@ -1,13 +1,14 @@
 # POMO
 
-A Pomodoro timer that lives in your macOS menu bar. The ring empties as the session runs down, so you can see the time left without clicking anything.
+A Pomodoro timer that floats on top of your other windows. The ring empties as the session runs down, so you can see the time left without clicking anything — and you can drag it anywhere on screen.
 
 - Click the ring and type the length you want, or tap a 25 / 45 / 50 preset — no settings screen to dig through
+- Drag the widget anywhere on screen
 - Don't want breaks? Switch them off and focus sessions run back to back
 - Notification banner and a sound when a session ends
 - Optional launch at login
 - English and Korean, following your system language
-- No Dock icon, no window in your way
+- No Dock icon, no menu bar clutter
 
 Requires macOS 13 or later.
 
@@ -57,9 +58,9 @@ Bump `CFBundleShortVersionString` and `CFBundleVersion` in `Info.plist` first, a
 
 ## 한국어
 
-맥북 상태바에 사는 뽀모도로 타이머입니다. 남은 시간만큼 링이 줄어들어서, 클릭하지 않아도 얼마나 남았는지 보입니다.
+화면 위에 항상 떠 있는 뽀모도로 타이머입니다. 남은 시간만큼 링이 줄어들어서, 클릭하지 않아도 얼마나 남았는지 보이고, 원하는 위치로 드래그해서 옮길 수 있습니다.
 
-상태바를 클릭하면 뜨는 패널에서 원하는 시간을 바로 입력하거나 25 / 45 / 50 프리셋을 누르면 됩니다. 휴식이 필요 없으면 스위치를 꺼서 집중만 이어서 돌릴 수도 있어요. 세션이 끝나면 알림과 소리로 알려주고, 로그인 시 자동 실행은 톱니바퀴 메뉴에 있습니다. 시스템 언어에 따라 한국어와 영어로 표시됩니다.
+위젯을 클릭하면 뜨는 패널에서 원하는 시간을 바로 입력하거나 25 / 45 / 50 프리셋을 누르면 됩니다. 휴식이 필요 없으면 스위치를 꺼서 집중만 이어서 돌릴 수도 있어요. 세션이 끝나면 알림과 소리로 알려주고, 로그인 시 자동 실행은 톱니바퀴 메뉴에 있습니다. 시스템 언어에 따라 한국어와 영어로 표시됩니다.
 
 macOS 13 이상이 필요합니다. [최신 릴리스](../../releases/latest)에서 `POMO.zip`을 받아 압축을 풀고 응용 프로그램 폴더에 넣으면 됩니다.
 
